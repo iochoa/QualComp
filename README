@@ -1,0 +1,21 @@
+How to run LOCQUARD.
+
+This program takes as input a FASTQ file, and lossily compresses the Quality Scores. 
+The user needs to specify the fastq file to be compressed, the number of clusters in which he wants to divide the data, if any, and the number of bits per quality score sequence to be used for compression (RATE). 
+If several number of clusters and rates are specified, the algorithm compresses the fastq file for all the possible combinations of number of clusters and rates.
+
+1) INSTALLATION
+Run make
+
+2) USING THE PROGRAM
+The main file for compression is 'runCompress.sh'
+For help on how to use it, run:
+./runCompress.sh -h
+
+The main file to reconstruct the fastq files is 'runDecompress.sh'
+For help on how to use it, run:
+./runDecompress.sh -h
+
+For an example on how to compress, decompress and compute the MSE, and the files that are generated in the process, see and run 'runExample.sh'
+
+
