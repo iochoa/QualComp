@@ -1,4 +1,4 @@
-How to run LOCQUARD.
+How to run QualComp
 
 This program takes as input a FASTQ file, and lossily compresses the Quality Scores. 
 The user needs to specify the fastq file to be compressed, the number of clusters in which he wants to divide the data, if any, and the number of bits per quality score sequence to be used for compression (RATE). 
