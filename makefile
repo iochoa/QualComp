@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -I.
-LDFLAGS = -lgsl -lgslcblas -lm
+CFLAGS = -I. -I/opt/homebrew/opt/gsl/include
+LDFLAGS = -L/opt/homebrew/opt/gsl/lib -lgsl -lgslcblas -lm
 
 BIN = cluster computeMSE computeNumSzReads createFastq generateStats NtoMinQV computeOptimalRho computeSvd compressQval decompressQval
 all: $(BIN)
