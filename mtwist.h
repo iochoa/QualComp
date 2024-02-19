@@ -261,28 +261,28 @@ extern int		mt_loadstate(FILE* statefile);
 #ifdef __cplusplus
 #endif /* __cplusplus */
 
-extern uint32_t		mts_lrand(mt_state* state);
+static uint32_t		mts_lrand(mt_state* state);
 					/* Generate 32-bit value, any gen. */
 #ifdef UINT64_MAX
-extern uint64_t		mts_llrand(mt_state* state);
+static uint64_t		mts_llrand(mt_state* state);
 					/* Generate 64-bit value, any gen. */
 #endif /* UINT64_MAX */
-extern double		mts_drand(mt_state* state);
+static double		mts_drand(mt_state* state);
 					/* Generate floating value, any gen. */
 					/* Fast, with only 32-bit precision */
-extern double		mts_ldrand(mt_state* state);
+static double		mts_ldrand(mt_state* state);
 					/* Generate floating value, any gen. */
 					/* Slower, with 64-bit precision */
 
-extern uint32_t		mt_lrand(void);	/* Generate 32-bit random value */
+static uint32_t		mt_lrand(void);	/* Generate 32-bit random value */
 #ifdef UINT64_MAX
-extern uint64_t		mt_llrand(void);
+static uint64_t		mt_llrand(void);
 					/* Generate 64-bit random value */
 #endif /* UINT64_MAX */
-extern double		mt_drand(void);
+static double		mt_drand(void);
 					/* Generate floating value */
 					/* Fast, with only 32-bit precision */
-extern double		mt_ldrand(void);
+static double		mt_ldrand(void);
 					/* Generate floating value */
 					/* Slower, with 64-bit precision */
 
